@@ -5,6 +5,7 @@
 # 09/21/2024
 #-----------------
 #Working with Lists
+print("Working with Lists")
 my_list = []
 
 my_list.append("apple")
@@ -23,6 +24,7 @@ print(my_list)
 # ['apple', 'orange', 'grape', 'strawberry']
 #-----------------
 #Using Tuples
+print("Using Tuples")
 colors = ("red", "green", "blue", "yellow")
 print(colors)
 print(colors[0])
@@ -35,16 +37,18 @@ print(colors[3])
 #TypeError: 'tuple' object does not support item assignment
 #-----------------
 #Working with Sets
-student_names = ["John", "Emma", "Sophia", "James"]
+print("Working with Sets")
+student_names = set(["John", "Emma", "Sophia", "James"])
 print(student_names)
-student_names.append("Oliver")
+student_names.add("Oliver")
 print(student_names)
 student_names.remove("Sophia")#Removes sophia
 print(student_names)
-student_names.append("John")#Add John again, no error happens it lets another John come in. Maybe because sets are mutable
+student_names.add("John")#No error but extra john was not added. Sets cannot do duplicates
 print(student_names)
 #------------------
 #Using Dictionaries
+print("Using Dictionaries")
 student_scores = {
     "John":85, 
     "Emma":92, 
